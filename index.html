@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="img/logo-Colored.png" alt="logo-Colored">
+                <h2>Minimal</h2>
+            </div>
+
+            <nav class="header__nav">
+                <a href="#">process</a>
+                <a href="#">projects</a>
+                <a href="#">team</a>
+                <a href="#">contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section section1">
+            <div class="section1__img">
+                <h1>Making brands stand out <br> is our obsession </h1>
+                <hr>
+                <h5>Let us help your brand stand out.</h5>
+            </div>
+            <div class="section1__content">
+                <span>Minimalist is a full-service digital creative agency located in Ontorio Canada. We focus on design, consulting, technology, and photography. We’ve been building unique digital products, platforms, and experiences for the past 6 years. Let us help your company grow.</span>
+                <button>Get in Touch</button>
+            </div>
+        </section>
+
+        <section class="section section2">
+            <h2 class="section__title"> How we make brands thrive </h2>
+            <hr>
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="img/hwm-1.png" alt="hwm-1">
+                    </div>
+                    <span class="card__title">SET a target</span>
+                    <span class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</span>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="img/hwm-2.png" alt="hwm-2">
+                    </div>
+                    <span class="card__title">design a solution</span>
+                    <span class="card__text">Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</span>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="img/hwm-3.png" alt="hwm-3">
+                    </div>
+                    <span class="card__title">track the progress</span>
+                    <span class="card__text">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section3">
+            <h2 class="section__title"> Recent projects </h2>
+            <hr>
+            <div class="cards" id="projects" onload="rpCards()"></div>
+        </section>
+    </main>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

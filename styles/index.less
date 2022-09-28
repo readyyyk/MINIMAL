@@ -1,0 +1,221 @@
+@text-dark:#333333;
+@text-light: #404040;
+@text-lighter: #ABABAB;
+
+@bg-grey: #F5F5F5;
+@bg-yellow: #FEFEC9;
+
+@btn-text: #8BCAC3;
+@btn-border: #7EC4BD;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Vollkorn:ital@0;1&display=swap');
+// font-family: 'Montserrat';
+// font-family: 'Oswald';
+// font-family: 'Vollkorn';
+
+
+// :root {
+//     --main-bg-color: brown;
+//   }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: @text-dark;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    width: 80px;
+    border-color: #00000017;
+    margin-bottom: 3em;
+}
+
+button{
+    border-radius: 3px;
+    border: 1px #47474F solid;
+    border-bottom: 2px #47474F solid;
+    outline: none;
+    background: none;
+    box-sizing: border-box;
+    padding: .7em 3em 1.7em;
+    font-family: 'Vollkorn';
+    font-size: 18px;
+    transition: .1s border top ease;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    &:hover{
+        border-bottom: 1px #47474F solid;
+        top: 1px;
+    }
+}
+
+
+.header{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 4em;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 0 10px #000;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1440px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 1em 0;
+        & img{
+            width: 65px;
+            height: 70px;
+        }
+        & h2{
+            padding: 0 1em;
+            box-sizing: border-box;
+            font-family: 'Oswald';
+            text-transform: uppercase;
+            color: @text-dark;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        align-items: center;
+
+        & a{
+            color: @text-light;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+    }
+}
+
+main{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6.7em 0 0 0;
+    max-width: 1440px;
+}
+
+.section{
+    padding: 3em 0;
+    box-sizing: border-box;
+
+    &__title{
+        font-size: 23px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    &1{
+        width: 100%;
+        padding: 0;
+        &__img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3em;
+            box-sizing: border-box;
+            background: url('../img/section1-bg.png');
+            background-size: cover;
+            color: #fff;
+
+            & h1{
+                text-align: center;
+                font-size: 44px;
+                font-weight: 100;
+            }
+
+            & hr{
+                border-color: #fff;
+            }
+
+            & h5{
+                font-family: 'Vollkorn';
+                font-size: 15px;
+                font-weight: 100;
+                color: #FFFFFFCF;
+            }
+        }
+        &__content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 3em 7em;
+            box-sizing: border-box;
+            background: @bg-yellow;
+            
+            font-size: 18px;
+            font-family: 'Vollkorn';
+            color: #47474F;
+            & span{
+                text-align: center;
+            }
+            & button{
+                width: fit-content;
+                height: fit-content;
+                margin-top: 3em;
+            }
+        }
+    }
+
+    &2{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    &3{
+        background: @bg-grey;
+    }
+}
+
+.card{
+    
+    &s{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 940px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    background: #fff;
+    
+    &__img{
+        background: @bg-grey;
+        padding: 2em 1.5em;
+    }
+    &__title{
+        text-transform: uppercase;
+        font-size: 16px;
+        margin: 2em ;
+    }
+    &__text{
+        font-family: 'Vollkorn';
+        font-size: 15px;
+        padding: .1em;
+        box-sizing: border-box;
+    }
+}
