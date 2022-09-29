@@ -184,6 +184,36 @@ main{
     }
     &3{
         background: @bg-grey;
+        & .cards{
+            margin: 0 auto;
+
+            & .card{
+                & .card__img{
+                    padding: 0;
+                }
+                &__title{
+                    margin: 1em;
+                }
+            }
+        }
+    }
+
+    &4{
+        & .cards .card{
+            width: 220px;
+            &__img{
+                width: 100%;
+                padding: 0;
+                display: flex;
+                align-items: flex-end;
+            }
+            &__title{
+                margin-bottom: 1em;
+            }
+            &__text{
+                margin-bottom: 3em;
+            }
+        }
     }
 }
 
@@ -193,6 +223,7 @@ main{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 0 auto;
         width: 100%;
         max-width: 940px;
     }
@@ -202,10 +233,14 @@ main{
     text-align: center;
     width: 300px;
     background: #fff;
+    margin-bottom: 1em;
     
     &__img{
         background: @bg-grey;
         padding: 2em 1.5em;
+        & img{
+            max-width: 100%;
+        }
     }
     &__title{
         text-transform: uppercase;
@@ -217,5 +252,34 @@ main{
         font-size: 15px;
         padding: .1em;
         box-sizing: border-box;
+    }
+    &__social{
+        display: flex;
+        flex-wrap: nowrap;
+
+        justify-content: center;
+        align-items: center;
+        & a{
+            margin: 0 .4em;
+            width: 2em;
+            background: @bg-grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img{
+                width: 1.3em;
+            }
+        }
+    }
+}
+
+@media (max-width: 920px){
+    .cards{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 2em;
     }
 }
