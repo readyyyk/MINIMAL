@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/logo-Colored.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>MINIMAL</title>
 </head>
 <body>
     
@@ -16,7 +17,11 @@
                 <h2>Minimal</h2>
             </div>
 
-            <nav class="header__nav">
+            <div class="btn">
+                <img src="img/bm.svg" alt="" width="35px" onclick="nav()" data-closed="true">
+            </div>
+
+            <nav class="header__nav" id="collapse">
                 <a href="#">process</a>
                 <a href="#">projects</a>
                 <a href="#">team</a>
@@ -79,7 +84,82 @@
             <hr>
             <div class="cards" id="team"></div>
         </section>
+
+        <section class="section section5">
+            <h2 class="section__title"> <img src="img/comments.svg" alt=""> </h2>
+            
+            <div class="comments">
+                <div class="comment">
+                    <div class="comment__text">“I love these guys! They did a great job. I would recommend them to anyone.”</div>
+                    <img src="img/comments-1.png" alt="">
+                    <div class="comment__author">Julius Von Uberstien</div>
+                </div>
+
+            <hr>
+
+                <div class="comment">
+                    <div class="comment__text">“Elexis Corp. has grown immensely with the help of Minimal.”</div>
+                    <img src="img/comments-2.png" alt="">
+                    <div class="comment__author">Rachel Stamos</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section6">
+            <h2 class="section__title"> LET’s Get in touch </h2>
+            <hr>
+            <div class="cards">
+                <div class="git__card">
+                    <div class="git__card__img">
+                        <img src="img/git-3.png" alt="">
+                    </div>
+                    <div class="card__title">MEET US IN PERSON</div>
+                    <div class="card__text">
+                        <a href="#"> 8776 Juniper Street<br>
+                        Unit #204 <br>
+                        Merriweather, Ontorio <br>
+                        Canada </a>
+                    </div>
+                </div>
+                <div class="git__card">
+                    <div class="git__card__img">
+                        <img src="img/git-1.png" alt="">
+                    </div>
+                    <div class="card__title">The traditional way</div>
+                    <div class="card__text">
+                        <a href="#"> Email us <br> contact@minimal.com </a> <br> <br>
+                        Contact form <br>
+                        Scroll down
+                    </div>
+                </div>
+                <div class="git__card">
+                    <div class="git__card__img">
+                        <img src="img/git-2.png" alt="">
+                    </div>
+                    <div class="card__title">Let’s get social</div>
+                    <div class="card__text lct">
+                        <a href="#"> <img src="img/social-2.svg" alt=""> Facebook <br> </a>
+                        <a href="#"> <img src="img/social-3.svg" alt=""> Twitter <br> </a>
+                        <a href="#"> <img src="img/social-4.svg" alt=""> Linkdin </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <form>
+                <input type="text" placeholder="   Name">
+                <input type="text" placeholder="   Email">
+                <input type="text" placeholder="   Budget">
+                <input type="text" class="bh" placeholder="   Describe youre project...">
+                <div class="form__inner">
+                    <button>Send Message</button>
+                </div>
+            </form>
+            <img src="img/logo-noColor.png" alt="">
+            <span>Minimal Template made in Webflow. All rights reserved.</span>
+        </footer>
     </main>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
